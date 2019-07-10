@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc87b97f-4910-4d0f-865f-c73da4e11e6b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/cn/lockinlife/config/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/cn/lockinlife/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/cn/lockinlife/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/cn/lockinlife/entity/LockData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/cn/lockinlife/util/ErrCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/cn/lockinlife/util/LockInLifeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/cn/lockinlife/util/ResourceUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/cn/lockinlife/config/CorsFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/cn/lockinlife/config/SwaggerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/cn/lockinlife/config/WebMvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/cn/lockinlife/entity/LockData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/cn/lockinlife/util/ErrCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/cn/lockinlife/util/LockInLifeUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/cn/lockinlife/util/ResourceUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dict/activiti.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dict/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/HslActivitiApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/biz/process/UnLockTaskProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/annotation/Activiti.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/annotation/ActivitiAop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/annotation/ActivitiNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/controller/ActivitiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/controller/ActivitiHandleExpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/controller/ActivitiInitialize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/controller/ActivitiProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/entity/ActApproveHis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/entity/ActApproveRs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/entity/ActHandleInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/entity/ActNodeDeploy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/entity/ActNodeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/entity/ActProcessInfoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/entity/ActRoleAssign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActApproveHisMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActApproveHisSQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActApproveRsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActApproveRsSQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActHandleInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActHandleInfoSQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActNodeDeployMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActNodeDeploySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActNodeInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActNodeInfoSQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActProcessInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActProcessInfoSQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActRoleAssignMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActRoleAssignSQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActApproveHisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActApproveHisServiceI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActApproveRsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActApproveRsServiceI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActHandleInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActHandleInfoServiceI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActProcessInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActProcessInfoServiceI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActRoleAssignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActRoleAssignServiceI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActivitiInitializeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActivitiInitializeServiceI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/strategy/DefaulRoleAssignStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/strategy/RoleAssignStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/strategy/assignrule/AvgRoleAssignRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/strategy/assignrule/RoleAssignRuleI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/threadpool/ThreadPoolUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/util/ActivitiDD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/config/LockConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/mapper/CustomWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/mapper/MapWrapperFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hsl-activiti/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/common/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/hsl-activiti/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="2011721252">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="8" />
+          <entry key="java" value="58" />
+          <entry key="properties" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="8" />
+          <entry key="JAVA" value="58" />
+          <entry key="Properties" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1323" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1323" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/annotation/ActivitiAop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-16">
+              <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActApproveHisSQL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/controller/ActivitiProcess.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="66" column="70" selection-start-line="66" selection-start-column="70" selection-end-line="66" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActProcessInfoServiceI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActProcessInfoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="111" column="41" selection-start-line="111" selection-start-column="41" selection-end-line="111" selection-end-column="41" />
+              <folding>
+                <element signature="e#1436#1437#0" expanded="true" />
+                <element signature="e#1501#1502#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActApproveHisService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+              <folding>
+                <element signature="e#554#555#0" expanded="true" />
+                <element signature="e#624#625#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/entity/ActHandleInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="13" column="25" lean-forward="true" selection-end-line="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActProcessInfoMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/entity/ActApproveHis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/util/ActivitiDD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>curId</find>
+      <find>jumpToNextNode</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Downloads/mirrors-elasticsearch-master/elasticsearch" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/entity/ActApproveHis.java" />
+        <option value="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActApproveHisSQL.java" />
+        <option value="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActProcessInfoService.java" />
+        <option value="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActProcessInfoServiceI.java" />
+        <option value="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/util/ActivitiDD.java" />
+        <option value="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/entity/ActHandleInfo.java" />
+        <option value="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActHandleInfoSQL.java" />
+        <option value="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/annotation/ActivitiAop.java" />
+        <option value="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/controller/ActivitiController.java" />
+        <option value="$PROJECT_DIR$/common/src/main/resources/bootstrap.properties" />
+        <option value="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/HslActivitiApp.java" />
+        <option value="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActProcessInfoMapper.java" />
+        <option value="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/biz/process/UnLockTaskProcess.java" />
+        <option value="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/controller/ActivitiProcess.java" />
+        <option value="$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/controller/ActivitiHandleExpController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2507" />
+    <option name="y" value="180" />
+    <option name="width" value="2579" />
+    <option name="height" value="1409" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>General</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Duplicates</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="activiti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activiti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="hsl-activiti" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activiti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="hsl-activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activiti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="hsl-activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activiti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="hsl-activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activiti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="hsl-activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activiti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="hsl-activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="lockinlife" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activiti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="hsl-activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="lockinlife" type="462c0819:PsiDirectoryNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activiti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="hsl-activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="lockinlife" type="462c0819:PsiDirectoryNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activiti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="hsl-activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="lockinlife" type="462c0819:PsiDirectoryNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="process" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activiti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="hsl-activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="lockinlife" type="462c0819:PsiDirectoryNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activiti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="hsl-activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="lockinlife" type="462c0819:PsiDirectoryNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activiti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="hsl-activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="lockinlife" type="462c0819:PsiDirectoryNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activiti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="hsl-activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="lockinlife" type="462c0819:PsiDirectoryNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activiti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="hsl-activiti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="actprocessinfoser&#9;FILE&#9;file://F:/dev/professional/workspace/demo/activiti/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActProcessInfoServiceI.java&#10;ActivitiP&#9;FILE&#9;file://F:/dev/professional/workspace/demo/activiti/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/controller/ActivitiProcess.java&#10;ActProcessInfoMa&#9;FILE&#9;file://F:/dev/professional/workspace/demo/activiti/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActProcessInfoMapper.java&#10;ActHandleInfo&#9;PSI&#9;JAVA://cn.lockinlife.activiti.core.entity.ActHandleInfo&#10;ActApproveHisSQL&#9;FILE&#9;file://F:/dev/professional/workspace/demo/activiti/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActApproveHisSQL.java" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562641851824" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../V2.7.0/lockinlife" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\dev\professional\workspace\demo\activiti\common\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.UnLockTaskProcess">
+    <configuration name="UnLockTaskProcess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.lockinlife.activiti.biz.process.UnLockTaskProcess" />
+      <module name="hsl-activiti" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.lockinlife.activiti.biz.process.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HslActivitiApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hsl-activiti" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.lockinlife.HslActivitiApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.HslActivitiApp" />
+      <item itemvalue="Application.UnLockTaskProcess" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UnLockTaskProcess" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc87b97f-4910-4d0f-865f-c73da4e11e6b" name="Default Changelist" comment="" />
+      <created>1562572984267</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562572984267</updated>
+      <workItem from="1562572986510" duration="10742000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10742000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="2518" y="144" width="2063" height="1127" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info id="Designer" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.20598504" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Spring" order="5" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.40584087" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.32394367" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="1" weight="0.32984033" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info id="Designer" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.20608783" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="5" />
+      <window_info anchor="bottom" id="Spring" order="6" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Run" order="9" />
+      <window_info anchor="bottom" id="Debug" order="10" visible="true" weight="0.4471299" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/controller/ActivitiProcess.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/cn/lockinlife/util/LockInLifeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActApproveHisMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActApproveHisServiceI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActHandleInfoServiceI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActHandleInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+          <folding>
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActHandleInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActHandleInfoSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/resources/bootstrap.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-devtools/1.5.10.RELEASE/spring-boot-devtools-1.5.10.RELEASE.jar!/org/springframework/boot/devtools/restart/DefaultRestartInitializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/HslActivitiApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.18.RELEASE/spring-aop-4.3.18.RELEASE.jar!/org/springframework/aop/aspectj/MethodInvocationProceedingJoinPoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.18.RELEASE/spring-aop-4.3.18.RELEASE.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="405" selection-start-line="405" selection-end-line="405" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.18.RELEASE/spring-aop-4.3.18.RELEASE.jar!/org/springframework/aop/aspectj/AspectJAroundAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.18.RELEASE/spring-aop-4.3.18.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.18.RELEASE/spring-aop-4.3.18.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.18.RELEASE/spring-aop-4.3.18.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="517" selection-start-line="517" selection-end-line="517" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.14.RELEASE/spring-core-4.3.14.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/strategy/RoleAssignStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActRoleAssignServiceI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActRoleAssignService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActRoleAssignMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/controller/ActivitiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="119" column="32" lean-forward="true" selection-start-line="119" selection-start-column="32" selection-end-line="119" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/strategy/DefaulRoleAssignStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8.0_181/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9606">
+          <caret line="391" column="33" lean-forward="true" selection-start-line="391" selection-start-column="33" selection-end-line="391" selection-end-column="61" />
+          <folding>
+            <element signature="e#11985#11986#0" expanded="true" />
+            <element signature="e#12016#12017#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/controller/ActivitiHandleExpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="179" column="60" selection-start-line="179" selection-start-column="60" selection-end-line="179" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/entity/ActNodeInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActApproveRsServiceI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActApproveRsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/biz/process/UnLockTaskProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+          <folding>
+            <element signature="e#3399#3400#0" expanded="true" />
+            <element signature="e#3461#3462#0" expanded="true" />
+            <element signature="e#3630#3631#0" expanded="true" />
+            <element signature="e#3692#3693#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActApproveHisSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/util/ActivitiDD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActApproveHisService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding>
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/entity/ActHandleInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="13" column="25" lean-forward="true" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/entity/ActApproveHis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/controller/ActivitiProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="66" column="70" selection-start-line="66" selection-start-column="70" selection-end-line="66" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActProcessInfoServiceI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/service/ActProcessInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="111" column="41" selection-start-line="111" selection-start-column="41" selection-end-line="111" selection-end-column="41" />
+          <folding>
+            <element signature="e#1436#1437#0" expanded="true" />
+            <element signature="e#1501#1502#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/mapper/ActProcessInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hsl-activiti/src/main/java/cn/lockinlife/activiti/core/annotation/ActivitiAop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>common</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.1.11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
