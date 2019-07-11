@@ -101,6 +101,9 @@ public class ActivitiHandleExpController {
         actApproveHisService.updateEntity(approveInfo);
         //更新异常记录
         ActHandleInfo handleInfo = actHandleInfoService.getHandleByApplcNum(applcNum);
+        if (handleInfo == null){
+            return new LockData(false, ErrCode.unknown_err, "该用户无审批权限");
+        }
         handleInfo.setApprvRs(ActivitiDD.ApproveState.Disaggree);
         handleInfo.setEndTime(new Date());
         actHandleInfoService.updateEntity(handleInfo);

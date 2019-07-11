@@ -16,6 +16,9 @@ public interface ActRoleAssignMapper {
     @Select("SELECT tel FROM act_role_assign WHERE applcNum=#{applcNum} AND department=#{department} limit 0,1")
     String assignTask(@Param("applcNum") String applcNum, @Param("department") String department);
 
+    @Select("SELECT tel FROM act_role_assign WHERE applcNum=#{applcNum} AND department=#{department}AND nodeOrder=#{nodeOrder} limit 0,1")
+    String assignTaskByOrder(@Param("applcNum") String applcNum, @Param("department") String department,@Param("nodeOrder")Integer nodeOrder);
+
     @InsertProvider(type = ActRoleAssignSQL.class, method = "insertEntity")
     void createRole(@Param("param") ActRoleAssign actRoleAssign);
 

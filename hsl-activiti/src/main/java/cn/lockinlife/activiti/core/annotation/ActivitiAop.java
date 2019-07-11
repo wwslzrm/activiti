@@ -66,7 +66,8 @@ public class ActivitiAop {
             nextNodeId = ActivitiDD.handleExpId;
             errorDetail = e.getMessage();
         }
-        if (curApproveRs == null) {
+        //跳转到下一个岗位节点
+        if(curApproveRs == null) {
             curApproveRs = actApproveHisService.getCurApproveRs(applcNum);
         }
         //跳转到下一个岗位节点

@@ -19,6 +19,11 @@ public class ActRoleAssignService implements ActRoleAssignServiceI {
     public String assignTask(String applcNum, String oprDep) {
         return actRoleAssignMapper.assignTask(applcNum, oprDep);
     }
+	
+	@Override
+    public String assignTaskByOrder(String applcNum, String oprDep, Integer nodeOrder) {
+        return actRoleAssignMapper.assignTaskByOrder(applcNum, oprDep,nodeOrder);
+    }
 
     @Override
     public void createRole(ActRoleAssign actRoleAssign) {

@@ -76,14 +76,22 @@ public class ActivitiProcess {
                         //增加异常记录
                         ActHandleInfo actHandleInfo = new ActHandleInfo();
                         actHandleInfo.setSrcDep(srcDep);
+                        actHandleInfo.setSrcId(srcId);
                         actHandleInfo.setCreateTime(new Date());
                         String operator = roleAssignStrategy.assignTask(applcNum, ActivitiDD.handleExp);
                         actHandleInfo.setOperator(operator);
                         actHandleInfo.setApplcNum(applcNum);
                         actHandleInfo.setReson(errorDetail);
-                        actHandleInfoService.insertEntity(actHandleInfo);
-                        logger.info("applcNum[{}]srcDep[{}]nextDep[{}]", applcNum, srcDep, curDep);
                         nextNode = actProcessInfoService.getHandleExp();
+                        if (nextNode != null) {
+                            //获取不到异常岗信息
+                            logger.info("applcNum[{}]srcDep[{}]nextDep[{}]", applcNum, srcDep, curDep);
+                            actHandleInfoService.insertEntity(actHandleInfo);
+                        } else {
+                            actHandleInfo.setReson(errorDetail + ";" + "异常岗节点查询不到，请联系管理员");
+                            actHandleInfoService.insertEntity(actHandleInfo);
+                            return LockData.successResponse();
+                        }
                     } else {
                         logger.info("applcNum[{}]srcDep[{}]nextDep[{}]", applcNum, srcDep, curDep);
                         nextNode = actProcessInfoService.getNodeByCurId(curId, processId);
@@ -126,7 +134,8 @@ public class ActivitiProcess {
                         return LockData.successResponse();
                     } else if (nextNode.getType().equals("manual")) {
                         //流入人工岗
-                        String operator = roleAssignStrategy.assignTask(applcNum, nextNode.getOprDep());
+                        /*String operator = roleAssignStrategy.assignTask(applcNum, nextNode.getOprDep());*/
+                        String operator = roleAssignStrategy.assignTaskByOrder(applcNum, nextNode.getOprDep(),nextNode.getNodeOrder());
                         //增加待审批记录
                         ActApproveHis actApproveHis = new ActApproveHis();
                         actApproveHis.setSrcDep(srcDep);

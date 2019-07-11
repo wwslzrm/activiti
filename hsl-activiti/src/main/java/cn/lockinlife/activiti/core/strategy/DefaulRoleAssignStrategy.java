@@ -26,6 +26,12 @@ public class DefaulRoleAssignStrategy implements RoleAssignStrategy{
     public String assignTaskWithRule(String applcNum, String oprDep, List<String> users) {
         return roleAssignRule.assignTask(users);
     }
+	
+	@Override
+    public String assignTaskByOrder(String applcNum, String oprDep, Integer nodeOrder) {
+        String role = actRoleAssignService.assignTaskByOrder(applcNum, oprDep,nodeOrder);
+        return role == null ? "admin" : role;
+    }
 
 
 }

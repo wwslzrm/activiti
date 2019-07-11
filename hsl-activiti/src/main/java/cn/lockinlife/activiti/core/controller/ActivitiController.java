@@ -122,6 +122,56 @@ public class ActivitiController {
     }
 
 
+    @ApiOperation("人工审批")
+    @ApiImplicitParams({
+            @ApiImplicitParam(value="手机号", name="tel", dataType = "String"),
+            @ApiImplicitParam(value="token", name="token", dataType = "String"),
+            @ApiImplicitParam(value="审批岗位", name="department", dataType = "String"),
+            @ApiImplicitParam(value="申请编号", name="applcNum", dataType = "String"),
+            @ApiImplicitParam(value="审批结果", name="apprvRs", dataType = "String"),
+            @ApiImplicitParam(value = "审批意见", name = "apprvReason", dataType = "String")
+    })
+    @RequestMapping(value = "manualApproveWithDep.do", method = RequestMethod.POST)
+    public LockData manualApproveWithDep(String tel, String token, String applcNum, String department, String apprvRs, String apprvReason){
+        String nextNode = null;
+        String errorDetail = null;
+        Integer nextNodeId = 0;
+        // 查询当前申请编号是否存在
+        ActApproveHis approveInfo = actApproveHisService.getCurApproveRs(applcNum);
+        if (!LockInLifeUtil.vaildParams(approveInfo)) {
+            return new LockData(false, ErrCode.user_no_renting, "当前审批任务不存在");
+        }
+        if (department == null || ! department.equals(approveInfo.getCurDep())) {
+            String obj = String.format("当前流程在%s,请勿重复提交审批", approveInfo.getCurDep());
+            return new LockData(false, ErrCode.unknown_err, obj);
+        }
+        //判断当前任务是否需要改用户去审批
+//        if (!tel.equals(approveInfo.getOperator())) {
+//            //否， 则返回该用户无审批该任务的权限
+//            return new LockData(false, ErrCode.unknown_err, "该用户无审批权限");
+//        }
+        try {
+            //修改任务结果
+            approveInfo.setApprvRs(apprvRs);
+            approveInfo.setEndTime(new Date());
+            approveInfo.setApprvReason(apprvReason);
+            actApproveHisService.updateEntity(approveInfo);
+        } catch (Exception e){
+            logger.error("tel[{}]apprvRs[{}]人工提交失败,errorDetail[{}]", tel, apprvRs, e.getMessage());
+            //跳转到异常岗
+            nextNode = ActivitiDD.handleExp;
+            nextNodeId = ActivitiDD.handleExpId;
+            errorDetail = e.getMessage();
+        }
+        //系统自动下一个岗位的记录
+        /*activitiProcess.jumpToNextNode(null, applcNum, approveInfo.getProcessId(), approveInfo.getCurDep(), nextNode, errorDetail);*/
+        activitiProcess.jumpToNextNode(null, applcNum, approveInfo.getProcessId(),
+                approveInfo.getCurDep(), approveInfo.getCurId(),
+                nextNode, nextNodeId, errorDetail);
+        return LockData.successResponse();
+    }
+
+
 
 
 }
